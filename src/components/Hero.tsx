@@ -34,7 +34,7 @@ const Hero = () => {
      data-aos-duration="3000">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
           <div className="mb-6">
-            <span className="text-accent text-lg font-medium">Hello</span>
+            <span className="text-accent text-lg font-medium">Hello, I'm</span>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             Muhammad Ahmad
