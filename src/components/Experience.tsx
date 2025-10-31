@@ -7,7 +7,7 @@ const Experience = () => {
   const experiences = [
     {
       title: "Frontend Developer",
-      company: "ESCASA SOFTWARE HOUSE",
+      company: "ZEM-TECH SOFTWARE HOUSE",
       location: "Faisalabad, Pakistan",
       period: "May 2025 - Present",
       description: [

@@ -60,7 +60,7 @@ const TechStack = () => {
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <tech.icon
-                    className="h-12 w-12 transition-transform duration-300 group-hover:scale-110"
+                    className="h-12 w-12 transition-transform duration-300 group-hover:scale-110 "
                     style={{ color: tech.color }}
                   />
                   <span className="text-sm font-medium text-center group-hover:text-primary transition-colors">
@@ -77,7 +77,16 @@ const TechStack = () => {
               {skills.map((skill, index) => (
                 <Card
                   key={index}
-                  className="p-4 text-center hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 animate-fade-in glass"
+                  className="
+          p-4 text-center 
+          transition-all duration-300 ease-in-out 
+          hover:-translate-y-1 
+          animate-fade-in glass 
+          bg-transparent
+          hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 
+          hover:text-white
+          shadow-md hover:shadow-lg
+        "
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <span className="font-medium">{skill}</span>
@@ -85,6 +94,7 @@ const TechStack = () => {
               ))}
             </div>
           </div>
+
         </div>
       </div>
     </section>

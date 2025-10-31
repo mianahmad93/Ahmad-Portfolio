@@ -35,7 +35,7 @@ Aos.init();
             <div className="space-y-6 " data-aos="fade-right">
               <p className="text-lg text-muted-foreground leading-relaxed">
                 I'm a Frontend Developer with hands-on experience building responsive and 
-                user-friendly web applications. Currently working at <span className="text-primary font-semibold">ESCASA SOFTWARE HOUSE</span>, 
+                user-friendly web applications. Currently working at <span className="text-primary font-semibold">ZEM-TECH SOFTWARE HOUSE</span>, 
                 where I develop modern web interfaces using React.js and integrate RESTful APIs.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">

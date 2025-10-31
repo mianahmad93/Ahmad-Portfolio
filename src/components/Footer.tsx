@@ -42,7 +42,7 @@ const Footer = () => {
 
           <div className="mt-8 pt-8 border-t border-border text-center">
             <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">
-              Made with <Heart className="h-4 w-4 text-red-500 animate-pulse-glow" /> by Muhammad Ahmad © 2025
+              Made with <Heart className="h-4 w-4 text-blue-500 animate-pulse-glow" /> by Muhammad Ahmad © 2025
             </p>
           </div>
         </div>

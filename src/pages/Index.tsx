@@ -21,7 +21,7 @@ const Index = () => {
           <Projects />
           <Contact />
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </ThemeProvider>
   );
