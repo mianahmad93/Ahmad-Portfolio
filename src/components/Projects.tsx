@@ -4,14 +4,25 @@ import { ExternalLink, Github } from "lucide-react";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
+import expenseTracker from "@/assets/expenseTracker.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 const Projects = () => {
   const projects = [
     {
+      title: "Expense Tracker App",
+      description:
+        "A modern expense management app built with React, TypeScript, and Redux Toolkit. Track your income, expenses, and view transaction history with real-time updates.",
+      image: expenseTracker,
+      technologies: ["React.js", "TypeScript", "Redux Toolkit", "CSS"],
+      liveLink: "https://expensetracker-typescript.netlify.app/",
+      githubLink: "https://github.com/mianahmad93/Expense_Tracker_App",
+    },
+    {
       title: "Coza Store Clone",
-      description: "A responsive e-commerce front-end for browsing fashion products with a clean, user-friendly design. Built with React.js and modern UI libraries.",
+      description:
+        "A responsive e-commerce front-end for browsing fashion products with a clean, user-friendly design. Built with React.js and modern UI libraries.",
       image: project2,
       technologies: ["React.js", "Bootstrap", "API Integration"],
       liveLink: "https://coza-store-app.netlify.app/",
@@ -19,7 +30,8 @@ const Projects = () => {
     },
     {
       title: "Portfolio Website",
-      description: "A modern, responsive personal portfolio site showcasing projects and skills with smooth navigation and elegant animations.",
+      description:
+        "A modern, responsive personal portfolio site showcasing projects and skills with smooth navigation and elegant animations.",
       image: project3,
       technologies: ["React.js", "Tailwind CSS", "Framer Motion"],
       liveLink: "https://portfolio-site-design.netlify.app/",
@@ -27,20 +39,25 @@ const Projects = () => {
     },
     {
       title: "Full Stack Project",
-      description: "A comprehensive full-stack application demonstrating both frontend and backend skills with modern technologies and best practices.",
+      description:
+        "A comprehensive full-stack application demonstrating both frontend and backend skills with modern technologies and best practices.",
       image: project1,
       technologies: ["React.js", "Node.js", "REST API"],
       liveLink: "#",
       githubLink: "#",
     },
   ];
-Aos.init();
+
+  Aos.init();
+
   return (
     <section id="projects" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Featured Projects</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              Featured Projects
+            </h2>
             <div className="w-20 h-1 gradient-primary mx-auto rounded-full"></div>
             <p className="text-muted-foreground mt-4 text-lg">
               Some of my recent work
@@ -50,7 +67,7 @@ Aos.init();
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
             {projects.map((project, index) => (
               <Card
-              data-aos="zoom-in"
+                data-aos="zoom-in"
                 key={index}
                 className="flex flex-col h-full overflow-hidden hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 group animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
@@ -85,13 +102,21 @@ Aos.init();
 
                   <div className="mt-auto flex gap-3">
                     <Button size="sm" variant="outline" className="flex-1" asChild>
-                      <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={project.liveLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <ExternalLink className="h-4 w-4 mr-2" />
                         Live Demo
                       </a>
                     </Button>
                     <Button size="sm" variant="outline" asChild>
-                      <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Github className="h-4 w-4" />
                       </a>
                     </Button>
@@ -100,7 +125,6 @@ Aos.init();
               </Card>
             ))}
           </div>
-
         </div>
       </div>
     </section>
