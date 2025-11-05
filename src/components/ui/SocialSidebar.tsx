@@ -37,11 +37,6 @@ const SocialSidebar = () => {
       label: "Email",
     },
     {
-      icon: Phone,
-      href: "tel:+923219300028",
-      label: "Phone",
-    },
-    {
       icon: Github,
       href: "https://github.com/mianahmad93",
       label: "GitHub",

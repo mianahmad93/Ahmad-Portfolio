@@ -67,8 +67,11 @@ const Projects = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
             {projects.map((project, index) => (
               <Card
-                data-aos="zoom-in"
                 key={index}
+                data-aos="fade-right"
+                data-aos-delay={index * 150} // stagger delay
+                data-aos-once="false"
+                data-aos-mirror="true"
                 className="flex flex-col h-full overflow-hidden hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 group animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
